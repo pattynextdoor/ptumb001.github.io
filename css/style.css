@@ -1,0 +1,128 @@
+body {
+    background-color: #162749;
+    font-family: 'Open Sans';
+    color: white;
+    text-shadow: 1px 1px 1px #000;
+    padding-bottom: 10%;
+}
+
+#content {
+    z-index: 999;
+    margin-left: 25%;
+    padding-right: 33%;
+}
+
+.sec {
+    height: 100vh;
+}
+
+.name {
+    letter-spacing: 3px;
+    font-size: 4em;
+    margin-top: 33%;
+    font-family: 'Merriweather';
+    text-shadow:
+        0 -1px 0 #fff,
+        0 1px 0 #2e2e2e,
+        0 2px 0 #2c2c2c,
+        0 3px 0 #2a2a2a,
+        0 4px 0 #282828,
+        0 5px 0 #262626,
+        0 6px 0 #242424,
+        0 7px 0 #222;
+}
+
+.bold {
+    font-weight: 600;
+    margin-bottom: 5%;
+}
+
+.p-text {
+    letter-spacing: 1px;
+    font-size: 1.2em;
+}
+
+hr {
+    width: 75%;
+    margin-left: 0;
+    margin-bottom: 5%;
+}
+
+.square {
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+    position: absolute;
+    background-color: white;
+    z-index: -999;
+}
+
+#shape-1 {
+    width: 100px;
+    height: 100px;
+    left: 12%;
+    top: 25vh;
+    background: rgb(250,116,47);
+    background: linear-gradient(-45deg, rgba(250,116,47,1) 22%, rgba(255,51,125,1) 100%);
+    z-index: 999;
+}
+
+#shape-2 {
+    width: 75px;
+    height: 75px;
+    left: 50%;
+    top: 75vh;
+    background: rgb(24,102,239);
+    background: linear-gradient(-45deg, rgba(24,102,239,1) 22%, rgba(49,255,147,1) 65%);
+    z-index: -999;
+}
+
+#particles-js {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 150vh;
+}
+
+.row {
+    margin-top: 7.5%;
+    margin-left: 15%;
+}
+
+a {
+    z-index: 9999;
+    text-decoration: none;
+    padding-bottom: 1em;
+    font-size: 1.25em;
+    position: relative;
+    overflow: hidden;
+}
+
+#github {
+    color: #ff337d;
+}
+
+#linkedin {
+    color: #fa742f;
+}
+
+#ig {
+    color: #31ff93;
+}
+
+  @media screen and (max-width: 414px) {
+    #content {
+      margin-left: 12.5%;
+      padding-right: 11.5%;
+    }
+    #shape-1 {
+      width: 50px;
+      height: 50px;
+      top: 12.5vh;
+    }
+
+    .name {
+      margin-top: 100%;
+      font-size: 2.5em;
+    }
+  }
