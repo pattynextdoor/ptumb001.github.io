@@ -18,8 +18,8 @@ body {
 
 .name {
     letter-spacing: 3px;
-    font-size: 4em;
-    margin-top: 33%;
+    font-size: 3.5em;
+    margin-top: 50%;
     font-family: 'Merriweather';
     text-shadow:
         0 -1px 0 #fff,
@@ -48,6 +48,11 @@ hr {
     margin-bottom: 5%;
 }
 
+h2 {
+    font-size: 1.5em;
+    letter-spacing: 0.5px;
+}
+
 .square {
     width: 50px;
     height: 50px;
@@ -60,8 +65,8 @@ hr {
 #shape-1 {
     width: 100px;
     height: 100px;
-    left: 12%;
-    top: 25vh;
+    left: 15%;
+    top: 10vh;
     background: rgb(250,116,47);
     background: linear-gradient(-45deg, rgba(250,116,47,1) 22%, rgba(255,51,125,1) 100%);
     z-index: 999;
@@ -71,7 +76,7 @@ hr {
     width: 75px;
     height: 75px;
     left: 50%;
-    top: 75vh;
+    top: 63vh;
     background: rgb(24,102,239);
     background: linear-gradient(-45deg, rgba(24,102,239,1) 22%, rgba(49,255,147,1) 65%);
     z-index: -999;
@@ -86,7 +91,7 @@ hr {
 
 .row {
     margin-top: 7.5%;
-    margin-left: 15%;
+    text-align: center;
 }
 
 a {
@@ -96,6 +101,14 @@ a {
     font-size: 1.25em;
     position: relative;
     overflow: hidden;
+    font-weight: 700;
+    text-shadow:
+        0 1px 0 #2e2e2e,
+        0 2px 0 #2c2c2c,
+        0 3px 0 #2a2a2a,
+        0 4px 0 #282828,
+        0 5px 0 #262626,
+        0 6px 0 #242424;
 }
 
 #github {
@@ -110,19 +123,27 @@ a {
     color: #31ff93;
 }
 
-  @media screen and (max-width: 414px) {
+@media screen and (max-width: 414px) {
     #content {
-      margin-left: 12.5%;
-      padding-right: 11.5%;
+        margin-left: 12.5%;
+        padding-right: 11.5%;
     }
     #shape-1 {
-      width: 50px;
-      height: 50px;
-      top: 12.5vh;
+        width: 50px;
+        height: 50px;
+        top: 25vh;
+    }
+
+    #shape-2 {
+        top: 50vh;
     }
 
     .name {
-      margin-top: 100%;
-      font-size: 2.5em;
+        margin-top: 100%;
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 1.3em;
     }
   }

@@ -3,6 +3,8 @@ var rellax = new Rellax('.rellax');
 var scene = document.getElementById('scene');
 var parallaxInstance = new Parallax(scene);
 
+AOS.init();
+
 particlesJS({
   "particles": {
     "number": {
@@ -31,12 +33,12 @@ particlesJS({
       }
     },
     "opacity": {
-      "value": 0.5,
+      "value": 0.75,
       "random": false,
       "anim": {
-        "enable": false,
+        "enable": true,
         "speed": 1,
-        "opacity_min": 0.1,
+        "opacity_min": 0.4,
         "sync": false
       }
     },
