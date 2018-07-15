@@ -91,6 +91,7 @@ h2 {
 
 .row {
     margin-top: 7.5%;
+    margin-bottom: 7.5%;
     text-align: center;
 }
 
@@ -102,6 +103,7 @@ a {
     position: relative;
     overflow: hidden;
     font-weight: 700;
+    letter-spacing: 1px;
     text-shadow:
         0 1px 0 #2e2e2e,
         0 2px 0 #2c2c2c,
@@ -109,6 +111,10 @@ a {
         0 4px 0 #282828,
         0 5px 0 #262626,
         0 6px 0 #242424;
+}
+
+a:hover {
+    transform: scale(1.2);
 }
 
 #github {
@@ -121,6 +127,14 @@ a {
 
 #ig {
     color: #31ff93;
+}
+
+#email {
+    color: #379392;
+}
+
+#resume {
+    color: #FFBC42;
 }
 
 @media screen and (max-width: 414px) {
