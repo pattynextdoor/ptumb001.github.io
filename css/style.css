@@ -114,7 +114,7 @@ a {
 }
 
 a:hover {
-    transform: scale(1.2);
+    filter: opacity(20);
 }
 
 #github {
