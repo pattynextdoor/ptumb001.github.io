@@ -1,96 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110333639-1"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-          dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'UA-110333639-1');
-      </script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/index.css">
 
-      <link rel="shortcut icon" type="image/png" href="https://raw.githubusercontent.com/ptumb001/personal-website/master/public/img/favicon-16x16.png" />
+  <title>Patrick Tumbucon</title>
+</head>
+<body>
+  <div class="container">
+    <section>
+      <div class="grid grid-hero">
 
-      <title>Patrick Tumbucon | Web Developer, Community Leader</title>
-
-      <meta name="description" content=" I'm a Computer Engineering student attending UC Riverside, set to graduate in 2019. Here, I'm involved with ACM@UCR and Citrus Hack. I'm interning at Esri at the moment and I'm having a blast! When I'm not redoing my personal website or messing with weird API's, I enjoy watching anime, going to music festivals, and eating KBBQ.">
-
-      <meta property="og:type" content="WebSite" />
-      <meta property="og:title" content="Patrick Tumbucon" />
-      <meta property="og:description" content="Web Developer, Community Leader." />
-      <meta property="og:url" content="https://patricktumbucon.com" />
-      <meta property="og:image" content="https://i.imgur.com/syrNShS.png" />
-
-      <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
-      <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.2/aos.css">
-      <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <div id="particles-js"></div>
-
-    <div class="rellax square" id="shape-1"
-        data-rellax-speed="-5"
-        style="transform: rotate(45deg);"></div>
-    <div class="rellax square" id="shape-2"
-        data-rellax-speed="3"
-        style="transform: rotate(45deg);"></div>
-
-    <div id="content">
-      <div class="rellax sec"
-          data-rellax-speed="-6">
-        <h1 class="name"
-            data-aos="fade-up"
-            data-aos-duration="600">Hi! I'm Patrick.</h1>
-        <hr data-aos="zoom-in"
-            data-aos-duration="1000"
-            data-aos-delay="300">
-        <h2 data-aos="fade-down"
-            data-aos-duration="1000"
-            data-aos-delay="600">🌏 Web Developer, Community Leader</h2>
-      </div>
-      <div class="paragraphs" data-aos="fade-in" data-aos-duration="600">
-        <div id="scene">
-          <div data-depth="0.2" style="font-size: 3.5em;">🚀</div>
+        <div class="col animation grid grid-anim">
+          
+          <div class="square yellow-red sq-1"></div>
+          <div class="square yellow-red sq-2"></div>
+          <div class="square yellow-red sq-3"></div>
+          <div class="square yellow-red sq-4"></div>
+        
         </div>
-        <p class="p-text bold">I have a passion for developing simplistic interfaces and bringing a well-rounded, holistic perspective to technology.</p>
-        <p class="p-text">Currently, I'm a Computer Engineering student attending UC Riverside, set to graduate in 2019. Here, I hold leadership positions within ACM@UCR and Citrus Hack.</p>
-        <p class="p-text">When I'm not coding, I enjoy watching anime, going to music festivals, and eating KBBQ.</p>
-        <p class="p-text">Want to chat? Feel free to contact me here:</p>
-      </div>
-      <div class="row">
-        <div class="six columns">
-          <a href="https://github.com/ptumb001" id="github" data-text="That cool wiggly underline that people like">Github
-          </a>
-        </div>
-        <div class="six columns">
-          <a href="https://linkedin.com/in/patricktumbucon" id="linkedin"> LinkedIn
-          </a>
+
+        <div class="col hero-content">
+          <h1>Patrick Tumbucon</h1>
+          <p class="subtitle">Software Developer, Community Leader</p>
+          <p class="subtitle" id="toggle" onclick="toggleDisplay()">Dark mode?</p>
+          <ul>
+            <li>
+              <a href="https://github.com/ptumb001">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://codepen.io/worldwithpatrick">
+                <i class="fab fa-codepen"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/PTumbucon">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://linkedin.com/in/patricktumbucon">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="PatrickTumbuconResume.pdf">
+                <i class="far fa-file-alt"></i>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="row">
-        <div class="six columns">
-          <a id="email" href="mailto:patricktumbucon@gmail.com">Email</a>
-        </div>
-        <div class="six columns">
-          <a id="resume" href="PatrickTumbuconResume.pdf">Resume</a>
-        </div>
-      </div>
+      
+    </section>
+            
+    <section>
+      <h2>What I've been up to</h2>
+      <p>
+        I'm currently a senior computer engineering undergraduate at <a href="http://ucr.edu">UC Riverside</a>. From there, I'll
+        be heading to 
+        <a href="http://amazon.com">Amazon</a>. 
+      </p>
+      <p>
+        Previously, I've increased search presence at
+        <a href="http:/esri.com">Esri</a>, professionally developed students at 
+        <a href="http://acmucr.org">ACM@UCR</a>, and organized multiple events at 
+        <a href="http://citrushack.com">Citrus Hack</a>.
+      </p>
+    </section>
+    
+    <section>
+      <h2>Some things I've made</h2>
 
+      <p>
+        <a href="https://github.com/ptumb001/locus">Locus</a>,
+        <a href="https://github.com/JohnPhamous/seefood">SeeFood</a>, and
+        <a href="https://github.com/ptumb001/flooferbot">Flooferbot</a>
+        are a few projects I've worked on. I also design and develop websites
+        for student organizations. You can find more on 
+        <a href="https://github.com/ptumb001">GitHub</a>.
+      </p>
+    </section>
+    
+    <section>
+      <h2>Ramblings</h2>
+      <p>
+        I believe that the best software is fixated on the problem itself, rather than its competitors.
+        I'm passionate about working in the front end, but I also enjoy working on complex back end systems.
+      </p>
+      <p>
+        In my free time, I enjoy relaxing at coffee shops, climbing rocks, playing strategy games (and Smash Bros), and attending music festivals.
+      </p>
+    </section>
 
-    </div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.2/aos.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.6.2/rellax.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.js"></script>
-  <script src="js/script.js"></script>
-  </body>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
 </html>
