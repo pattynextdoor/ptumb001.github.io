@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+
+body {
+  font-family: 'Space Mono', monospace;
+}
+
+.container {
+  padding: 0 35%;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-hero {
+  grid-template-columns: 25% 75%;
+}
+
+.grid-anim {
+  grid-template-columns: 50% 50%;
+}
+
+.col {
+  justify-self: center;
+}
+
+.hero-content {
+  padding-left: 5%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+  margin: 0 5%;
+}
+
+li>a>i {
+  font-size: 20px;
+  transition-duration: 200ms;
+  color: #000;
+}
+
+li>a>i:hover {
+  background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#toggle:hover {
+  background: linear-gradient(to right, #40e0d0, #ff8c00, #ff0080);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+section {
+  margin: 15% 5%;
+}
+
+#toggle {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.square {
+  width: 50px;
+  height: 50px;
+
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+  border-radius: 10%;
+
+}
+
+.sq-2 {
+  transform: rotate(90);
+}
+
+.sq-3 {
+  transform: rotate(-90);
+}
+
+.sq-4 {
+  transform: rotate(180);
+}
+
+a {
+  text-decoration: none;
+  color: #0475b1;
+  transition-duration: 250ms;
+}
+
+a:hover {
+  background: linear-gradient(-45deg,rgba(49,255,147,1) 25%, rgba(24,102,239,1) 62%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 14px;
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    .container {
+      padding: 0;
+    }
+
+    .col {
+      grid-column: 1 / span 2;
+    }
+
+    .hero-content {
+      text-align: center;
+    }
+
+}
