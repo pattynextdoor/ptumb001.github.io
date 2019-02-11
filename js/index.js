@@ -5,7 +5,7 @@ anime({
         delay: anime.stagger(100),
         scale: 0.75,
         borderRadius: "50%",
-        background: "linear-gradient(-45deg, rgba(24,102,239,1) 22%, rgba(49,255,147,1) 65%)"
+        background: ["linear-gradient(-45deg, rgba(250,116,47,1) 22%, rgba(255,51,125,1) 100%)", "linear-gradient(-45deg, rgba(24,102,239,1) 22%, rgba(49,255,147,1) 65%)"]
       },
       {
         delay: 1000,
@@ -28,38 +28,21 @@ anime({
 
 anime({
   targets: "body",
-  keyframes: [
-    {
-      backgroundColor: "#000",
-      delay: 200
-    },
-    {
-      backgroundColor: "#fff",
-      delay: 1000,
-      duration: 1000
-    }
-  ],
+  backgroundColor: ["#000", "#fff"],
+  duration: 2000,
   easing: "easeOutQuart"
 });
 
 anime({
   targets: "h1, h2, p, li>a>i",
-  keyframes: [
-    {
-      color: "#fff",
-      delay: 200
-    },
-    {
-      color: "#000",
-      delay: 1000,
-      duration: 1000
-    }
-  ],
+  color: ["#fff", "#000"],
+  duration: 2000,
   easing: "easeOutQuart"
 });
 
 function toggleDisplay() {
   let currBackground = document.getElementsByTagName("body")[0].style.backgroundColor;
+  console.log(currBackground);
   let toggleText = document.getElementById("toggle");
   
   // Currently light, turn dark
