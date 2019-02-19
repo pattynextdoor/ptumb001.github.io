@@ -43,6 +43,10 @@ li>a>i {
   color: #000;
 }
 
+li>a:hover {
+  text-decoration: none;
+}
+
 li>a>i:hover {
   background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
   -webkit-background-clip: text;
@@ -89,13 +93,14 @@ section {
 a {
   text-decoration: none;
   color: #0475b1;
-  transition-duration: 250ms;
+  transition-duration: 500ms;
 }
 
 a:hover {
   background: linear-gradient(-45deg,rgba(49,255,147,1) 25%, rgba(24,102,239,1) 62%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-decoration: underline;
 }
 
 h1 {
